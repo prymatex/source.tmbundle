@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -wKU
+	<string>#!/usr/bin/env ruby18 -wKU
 
 def tab
 	ENV['TM_SOFT_TABS'] == 'YES' ? ' ' * ENV['TM_TAB_SIZE'].to_i : "\t"
@@ -14,7 +14,9 @@ end
 code = STDIN.read
 
 if code =~ /\A\s*\{\s*\n(.*\n)\s*\}\s*\z/m then
-  STDOUT &lt;&lt; $1.gsub(/^#{tab}/, '')
+  code = $1
+  code.gsub!(/^#{tab}/, '') if code =~ /\n.*\n/
+  STDOUT &lt;&lt; code
 else
   STDOUT &lt;&lt; '}'
 end

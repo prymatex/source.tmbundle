@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/usr/bin/env ruby
+=======
+#!/usr/bin/env ruby18
+>>>>>>> textmate/master
 
 #
 # File: rubywrap.rb

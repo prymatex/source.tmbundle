@@ -5,7 +5,11 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
+<<<<<<< HEAD
 	<string>#!/usr/bin/env ruby
+=======
+	<string>#!/usr/bin/env ruby18
+>>>>>>> textmate/master
 
 termchar = ENV['TM_LINE_TERMINATOR'] || ";"
 
