@@ -12,11 +12,7 @@
 				<key>bundlePath</key>
 				<string>/Users/dpowers/Library/Application Support/TextMate/Bundles/Source.tmbundle</string>
 				<key>command</key>
-<<<<<<< HEAD
-				<string>#!/usr/bin/env ruby
-=======
 				<string>#!/usr/bin/env ruby18
->>>>>>> textmate/master
 
 termchar = ";"
 if ENV['TM_LINE_TERMINATOR']
@@ -34,7 +30,8 @@ print es($stdin.read()[/^(.*?);*\s*$/, 1]) + "#{es(termchar)}$0"</string>
 				<key>input</key>
 				<string>selection</string>
 				<key>keyEquivalent</key>
-				<string>~@</string>
+				<string>~@
+</string>
 				<key>name</key>
 				<string>Move to EOL and Insert Terminator — Source</string>
 				<key>output</key>
@@ -55,7 +52,8 @@ print es($stdin.read()[/^(.*?);*\s*$/, 1]) + "#{es(termchar)}$0"</string>
 		</dict>
 	</array>
 	<key>keyEquivalent</key>
-	<string>$@</string>
+	<string>$@
+</string>
 	<key>name</key>
 	<string>and Insert Terminator + LF</string>
 	<key>scope</key>
